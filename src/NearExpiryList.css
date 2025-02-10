@@ -1,0 +1,60 @@
+.near-expiry-list {
+    background-color: #FFFFFF; /* ホワイト背景 */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: auto; /* 横スクロールを可能にする */
+  }
+  
+  .near-expiry-list h2 {
+    color: #333333; /* ダークグレー */
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    text-align: center; /* 見出しを中央揃え */
+  }
+  
+  .near-expiry-list table {
+    width: 100%;
+    border-collapse: collapse; /* セルのボーダーを一つにまとめる */
+    margin-top: 20px;
+  }
+  
+  .near-expiry-list th, .near-expiry-list td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1.1rem;
+    border: 1px solid #E0E0E0; /* セルのボーダー */
+  }
+  
+  .near-expiry-list th {
+    background-color: #F5F5F5; /* ヘッダーの背景色 */
+    color: #333333; /* ヘッダー文字色 */
+    font-weight: bold;
+  }
+  
+  .near-expiry-list tr:nth-child(even) {
+    background-color: #F9F9F9; /* 偶数行の背景色 */
+  }
+  
+  .near-expiry-list tr:hover {
+    background-color: #F0F0F0; /* 行にホバーしたときの背景色 */
+  }
+  
+  .near-expiry-list button {
+    background-color: #5D5D5D; /* ダークグレー */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+  
+  .near-expiry-list button:hover {
+    background-color: #4C4C4C; /* ホバー時に少し明るいグレー */
+  }
+  

@@ -1,0 +1,130 @@
+/* ProductList.css */
+
+/* 商品リストの設定 */
+/* .product-list {
+  margin-top: 30px;
+} */
+
+/* 商品アイテムの設定 */
+/* .product-item {
+  background-color: #fff8c6; 
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* 商品名の設定 */
+/* .product-name {
+  font-weight: 600; 
+  color: #f6a500; 
+  font-size: 16px; 
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 150px; 
+} */
+
+/* 価格・数量の設定 */
+/* .product-price, .product-quantity, .product-expiry-date {
+  color: #8a8a8a; 
+  font-size: 14px;  
+  font-weight: 500; 
+} */
+
+/* 更新ボタンと削除ボタンの設定 */
+/* .update-button, .delete-button {
+  background-color: #f6c6a2; 
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+/* ホバー時のボタンの設定 */
+/* .update-button:hover, .delete-button:hover {
+  background-color: #f6a500; 
+} */
+
+/* レスポンシブ対応（画面幅が小さくなった場合） */
+/* @media (max-width: 600px) {
+  .product-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .product-name {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  
+  .product-price, .product-quantity {
+    font-size: 12px;
+  }
+} */
+
+
+.product-list {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.product-item {
+  background-color: #FFFFFF; /* ホワイト背景 */
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-name {
+  font-weight: 600;
+  color: #333333; /* ダークグレー */
+  font-size: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.product-price, .product-quantity, .product-expiry-date {
+  color: #757575; /* ソフトグレー */
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.update-button, .delete-button {
+  background-color: #5D5D5D; /* ダークグレー */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.update-button:hover, .delete-button:hover {
+  background-color: #4C4C4C; /* 少し明るいダークグレー */
+}
+
+@media (max-width: 600px) {
+  .product-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-name {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .product-price, .product-quantity {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,31 @@
+
+/* DeleteProduct.css */
+
+/* .delete-button {
+    background-color: #ffb6c1; 
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff8da1;
+  } */
+
+  .delete-button {
+    background-color: #E74C3C; /* 深いレッド */
+    color: white;
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #C0392B;
+  }
+  

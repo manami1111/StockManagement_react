@@ -1,0 +1,83 @@
+/* UpdateProduct.css */
+/* .update-product-form {
+  background-color: #f0f8ff; 
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin: 0 auto;
+}
+
+.update-product-form h2 {
+  color: #80ced7; 
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.update-product-form input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #a8d0e6;
+  font-size: 1rem;
+}
+
+.update-product-form button {
+  background-color: #80ced7; 
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.update-product-form button:hover {
+  background-color: #62b1c5; 
+} */
+
+.update-product-form {
+  background-color: #FFFFFF; /* ホワイト背景 */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 380px;
+  margin: 0 auto;
+}
+
+.update-product-form h2 {
+  color: #333333; /* ダークグレー */
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+
+.update-product-form input {
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #E0E0E0; /* ソフトグレーのボーダー */
+  font-size: 1.1rem;
+}
+
+.update-product-form input:focus {
+  border-color: #757575; /* フォーカス時のボーダー色 */
+  outline: none;
+}
+
+.update-product-form button {
+  background-color: #5D5D5D; /* ダークグレー */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.update-product-form button:hover {
+  background-color: #4C4C4C; /* ホバー時に少し明るいグレー */
+}
