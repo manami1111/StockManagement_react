@@ -14,6 +14,7 @@ const ProductList = ({ setSelectedProductId }) => {
 
     // コンポーネント(部品)が初めてレンダリングされた時にAPIから商品を取得
     useEffect(() => {
+        console.log('url::'+import.meta.env.VITE_API_URL)
         axios.get(import.meta.env.VITE_API_URL+'/api/products')  // LaravelのAPIにGETリクエスト
             .then(response => {
                 setProducts(response.data);  // APIから取得したデータを状態に保存
@@ -59,21 +60,21 @@ const ProductList = ({ setSelectedProductId }) => {
     return (
         <div className="product-list">
             <h1>📦在庫一覧📦</h1>
-            <ul>
+            <table>
                 {products.map(product => {
 
                     return (
-                        <li key={product.id} className='product-item'>
-                            <p className="product-name">{product.name}</p>
-                            <p className="product-price">¥{product.price}</p>
-                            <p className="product-quantity">在庫: {product.quantity}</p>
-                            <p className="product-expiry-date">消費期限: {formatDate(product.expiration_date)}</p>
+                        <tr key={product.id} className='product-item'>
+                            <td className="product-name">{product.name}</td>
+                            <td className="product-price">¥{product.price}</td>
+                            <td className="product-quantity">在庫: {product.quantity}</td>
+                            <td className="product-expiry-date">消費期限: {formatDate(product.expiration_date)}</td>
                             <button className='update-button' onClick={() => handleUpdateClick(product.id)}>更新</button>
                                 <DeleteProduct productId={product.id} />
-                        </li>
+                        </tr>
                     );
                 })}
-            </ul>
+            </table>
         </div>
     );
 };

@@ -9,7 +9,7 @@ function ExportButtons() { //Reactのコンポーネント。この中でボタ�
   const handleExportExcel = async () => { //async:非同期処理。サーバーから応答を待つ
     try {
       // tryブロック内に記述されたコードは、エラーが発生する可能性のあるコード。もしその中でエラーが発生した場合、catchブロックが実行
-      const response = await axios.get("http://127.0.0.1:8000/api/products/export", { //axios.get:データをAPIから取得
+      const response = await axios.get(import.meta.env.VITE_API_URL+"/api/products/export", { //axios.get:データをAPIから取得
         responseType: "blob", //普通のテキストデータとは違って、画像や動画は「バイナリ形式」で送られてくるので、この設定を使うことで正しく扱える
       });
 
@@ -70,7 +70,7 @@ function ExportButtons() { //Reactのコンポーネント。この中でボタ�
   // CSVエクスポート処理
   const handleExportCsv = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:8000/api/products/export-csv', {
+      const response = await axios.get(import.meta.env.VITE_API_URL+'/api/products/export-csv', {
         responseType: 'blob', 
       });
 

@@ -35,7 +35,7 @@ const AddProduct = () => {
 
 
     // Laravel APIにPOSTリクエストを送信
-    axios.post('http://localhost:8000/api/products', newProduct)
+    axios.post(import.meta.env.VITE_API_URL+'/api/products', newProduct)
       .then(response => {
         alert('商品が追加されました！');
         // フォーム送信後、状態をリセット

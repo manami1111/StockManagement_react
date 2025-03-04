@@ -11,7 +11,7 @@ const NearExpiryList = () => {
 
     useEffect(() => {
         // 商品データをAPIから取得
-        axios.get("http://localhost:8000/api/products")
+        axios.get(import.meta.env.VITE_API_URL+"/api/products")
             .then(response => {
                 const currentDate = new Date(); // 現在の日付と時刻
                 const thirtyDaysLater = new Date(currentDate);

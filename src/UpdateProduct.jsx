@@ -157,7 +157,7 @@ const UpdateProduct = () => {
     // axios.defaults.headers.common['X-CSRF-TOKEN'] = csrfToken;
 
     console.log('Fetching product data for ID:', productId); // デバッグ用ログ
-    axios.get(`http://localhost:8000/api/products/${productId}`)
+    axios.get(`${import.meta.env.VITE_API_URL}/api/products/${productId}`)
       .then(response => {
         const product = response.data;
         console.log('Product data fetched:', product); // デバッグ用ログ
@@ -187,7 +187,7 @@ const UpdateProduct = () => {
     console.log('Sending update request:', updatedProduct); // デバッグ用ログ
 
 
-    axios.put(`http://localhost:8000/api/products/${productId}`, updatedProduct)
+    axios.put(`${import.meta.env.VITE_API_URL}/api/products/${productId}`, updatedProduct)
       .then(response => {
         alert('商品が更新されました！');
       })

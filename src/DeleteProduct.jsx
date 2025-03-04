@@ -12,7 +12,8 @@ const DeleteProduct = ({ productId }) => {
 
     // OKの場合
     if (isConfirmed) {
-      axios.delete(`http://localhost:8000/api/products/${productId}`)
+      axios.delete(
+       import.meta.env.VITE_API_URL+`/api/products/${productId}`)
         .then(response => {
           alert('商品が削除されました！');
         })
