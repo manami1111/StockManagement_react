@@ -75,10 +75,15 @@
 
 
 table {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   max-width: 1000px;
   margin: auto;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
 }
 
 .product-item {
@@ -87,9 +92,6 @@ table {
   margin: 15px 0;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
 }
 
 .product-name {
@@ -102,19 +104,13 @@ table {
   width: 180px;
 }
 
-.product-price, .product-quantity {
+.product-price, .product-quantity, .product-expiry-date {
   color: #757575; /* ソフトグレー */
   font-size: 15px;
   font-weight: 500;
-  width: 55px;
+  white-space: nowrap;
 }
 
-.product-expiry-date {
-  color: #757575; /* ソフトグレー */
-  font-size: 15px;
-  font-weight: 500;
-  width: 80px;
-}
 
 .update-button, .delete-button {
   background-color: #5D5D5D; /* ダークグレー */
