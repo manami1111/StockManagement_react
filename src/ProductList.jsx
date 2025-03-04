@@ -14,7 +14,7 @@ const ProductList = ({ setSelectedProductId }) => {
 
     // コンポーネント(部品)が初めてレンダリングされた時にAPIから商品を取得
     useEffect(() => {
-        axios.get('http://localhost:8000/api/products')  // LaravelのAPIにGETリクエスト
+        axios.get(import.meta.env.VITE_API_URL+'/api/products')  // LaravelのAPIにGETリクエスト
             .then(response => {
                 setProducts(response.data);  // APIから取得したデータを状態に保存
             })
